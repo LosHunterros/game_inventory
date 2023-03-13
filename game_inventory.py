@@ -41,7 +41,6 @@ def import_inventory(inventory, filename="import_inventory.csv"):
     except:
         print(f"File '<{filename}>' not found!")
 
-    
 def export_inventory(inventory, filename="export_inventory.csv"):
     export_list = []
     for item, count in inventory.items():
@@ -54,7 +53,6 @@ def export_inventory(inventory, filename="export_inventory.csv"):
             csv_file.write(','.join(export_list))
     except:
         print(f"File '<{filename}>' not found!")
-
 
 inventory = {
     "item 3": 2,
